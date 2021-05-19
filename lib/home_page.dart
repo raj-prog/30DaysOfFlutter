@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  final int day = 30;
+  final int days = 30;
   final String raju = "Raju";
 
   @override
@@ -12,7 +12,10 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text("Welcome to $day days of flutter by $raju"),
+          child: Text(
+            "Welcome to $days days of flutter by $raju",
+            style: TextStyle(fontSize: 20.0),
+          ),
         ),
       ),
     );
